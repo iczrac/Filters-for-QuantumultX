@@ -1,0 +1,54 @@
+
+# [主机和端口文档](https://www.ibkrguides.com/kb/article-2816.htm)
+# 更新日期：2024.05.08.Wednesday
+
+# Client Portal and Websit
+## IBKR WEBSITE – AMERICA
+HOST-SUFFIX,interactivebrokers.com	443
+## IBKR WEBSITE – Canada
+HOST-SUFFIX,interactivebrokers.ca	443
+## IBKR WEBSITE – UK
+HOST-SUFFIX,interactivebrokers.co.uk	443
+## IBKR WEBSITE – INDIA2
+HOST-SUFFIX,interactivebrokers.co.in	443
+## IBKR WEBSITE – JAPAN2
+HOST-SUFFIX,interactivebrokers.co.jp	443
+## IBKR WEBSITE – HONG KONG2
+HOST-SUFFIX,interactivebrokers.com.hk	443
+## IBKR WEBSITE – CHINA2
+HOST-SUFFIX,ibkr.com.cn	443
+## IBKR WEBSITE - AUSTRALIA
+HOST-SUFFIX,interactivebrokers.com.au	443
+## CLIENT PORTAL – EAST
+HOST-SUFFIX,gdcdyn.interactivebrokers.com	443
+## CLIENT PORTAL – CENTRAL
+HOST-SUFFIX,cdcdyn.interactivebrokers.com	443
+
+# Desktop TW
+## TWS AMERICA – EAST
+ndc1.ibllc.com
+ndc1_hb1.ibllc.com
+## TWS AMERICA – CENTRAL
+cdc1.ibllc.com
+cdc1_hb1.ibllc.com
+## TWS EUROPE
+zdc1.ibllc.com
+zdc1_hb1.ibllc.com
+## TWS ASIA
+hdc1.ibllc.com
+hdc1_hb1.ibllc.com
+## TWS ASIA - CHINA3
+mcgw1.ibllc.com.cn
+mcgw1_hb1.ibllc.com.cn
+## TWS AUTO-UPDATE	PRIMARY	
+download.interactivebrokers.com 
+download2.interactivebrokers.com
+## RISK NAVIGATOR	PRIMARY
+risk.interactivebrokers.com	443
+## TWS CLOUD SETTINGS	PRIMARY	
+s3.amazonaws.com	443 
+## IB CAM	PRIMARY	
+ndc1.ibllc.com	4000 / 4001 
+## DIAGNOSTICS REPORTS	PRIMARY
+https://wit1.interactivebrokers.com	443
+
