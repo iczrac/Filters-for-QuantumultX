@@ -50,7 +50,7 @@ HOST-SUFFIX,s3.amazonaws.com,InteractiveBrokers
 ## IB CAM	PRIMARY	
 HOST-SUFFIX,ndc1.ibllc.com,InteractiveBrokers
 ## DIAGNOSTICS REPORTS	PRIMARY
-HOST-SUFFIX,https://wit1.interactivebrokers.com,InteractiveBrokers
+HOST-SUFFIX,wit1.interactivebrokers.com,InteractiveBrokers
 
 USER-AGENT,IBKR*,InteractiveBrokers
 USER-AGENT,IMPACT*,InteractiveBrokers
