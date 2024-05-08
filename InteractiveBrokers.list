@@ -4,51 +4,57 @@
 
 # Client Portal and Websit
 ## IBKR WEBSITE – AMERICA
-HOST-SUFFIX,interactivebrokers.com	443
+HOST-SUFFIX,interactivebrokers.com,InteractiveBrokers
 ## IBKR WEBSITE – Canada
-HOST-SUFFIX,interactivebrokers.ca	443
+HOST-SUFFIX,interactivebrokers.ca,InteractiveBrokers
 ## IBKR WEBSITE – UK
-HOST-SUFFIX,interactivebrokers.co.uk	443
+HOST-SUFFIX,interactivebrokers.co.uk,InteractiveBrokers
 ## IBKR WEBSITE – INDIA2
-HOST-SUFFIX,interactivebrokers.co.in	443
+HOST-SUFFIX,interactivebrokers.co.in,InteractiveBrokers
 ## IBKR WEBSITE – JAPAN2
-HOST-SUFFIX,interactivebrokers.co.jp	443
+HOST-SUFFIX,interactivebrokers.co.jp,InteractiveBrokers
 ## IBKR WEBSITE – HONG KONG2
-HOST-SUFFIX,interactivebrokers.com.hk	443
+HOST-SUFFIX,interactivebrokers.com.hk,InteractiveBrokers
 ## IBKR WEBSITE – CHINA2
-HOST-SUFFIX,ibkr.com.cn	443
+HOST-SUFFIX,ibkr.com.cn,InteractiveBrokers
 ## IBKR WEBSITE - AUSTRALIA
-HOST-SUFFIX,interactivebrokers.com.au	443
+HOST-SUFFIX,interactivebrokers.com.au,InteractiveBrokers
 ## CLIENT PORTAL – EAST
-HOST-SUFFIX,gdcdyn.interactivebrokers.com	443
+HOST-SUFFIX,gdcdyn.interactivebrokers.com,InteractiveBrokers
 ## CLIENT PORTAL – CENTRAL
-HOST-SUFFIX,cdcdyn.interactivebrokers.com	443
+HOST-SUFFIX,cdcdyn.interactivebrokers.com,InteractiveBrokers
 
 # Desktop TW
 ## TWS AMERICA – EAST
-ndc1.ibllc.com
-ndc1_hb1.ibllc.com
+HOST-SUFFIX,ndc1.ibllc.com,InteractiveBrokers
+HOST-SUFFIX,ndc1_hb1.ibllc.com,InteractiveBrokers
 ## TWS AMERICA – CENTRAL
-cdc1.ibllc.com
-cdc1_hb1.ibllc.com
+HOST-SUFFIX,cdc1.ibllc.com,InteractiveBrokers
+HOST-SUFFIX,cdc1_hb1.ibllc.com,InteractiveBrokers
 ## TWS EUROPE
-zdc1.ibllc.com
-zdc1_hb1.ibllc.com
+HOST-SUFFIX,zdc1.ibllc.com,InteractiveBrokers
+HOST-SUFFIX,zdc1_hb1.ibllc.com,InteractiveBrokers
 ## TWS ASIA
-hdc1.ibllc.com
-hdc1_hb1.ibllc.com
+HOST-SUFFIX,hdc1.ibllc.com,InteractiveBrokers
+HOST-SUFFIX,hdc1_hb1.ibllc.com,InteractiveBrokers
 ## TWS ASIA - CHINA3
-mcgw1.ibllc.com.cn
-mcgw1_hb1.ibllc.com.cn
+HOST-SUFFIX,mcgw1.ibllc.com.cn,InteractiveBrokers
+HOST-SUFFIX,mcgw1_hb1.ibllc.com.cn,InteractiveBrokers
 ## TWS AUTO-UPDATE	PRIMARY	
-download.interactivebrokers.com 
-download2.interactivebrokers.com
+HOST-SUFFIX,download.interactivebrokers.co,InteractiveBrokers
+HOST-SUFFIX,download2.interactivebrokers.com,InteractiveBrokers
 ## RISK NAVIGATOR	PRIMARY
-risk.interactivebrokers.com	443
+HOST-SUFFIX,risk.interactivebrokers.com,InteractiveBrokers
 ## TWS CLOUD SETTINGS	PRIMARY	
-s3.amazonaws.com	443 
+HOST-SUFFIX,s3.amazonaws.com,InteractiveBrokers
 ## IB CAM	PRIMARY	
-ndc1.ibllc.com	4000 / 4001 
+HOST-SUFFIX,ndc1.ibllc.com,InteractiveBrokers
 ## DIAGNOSTICS REPORTS	PRIMARY
-https://wit1.interactivebrokers.com	443
+HOST-SUFFIX,https://wit1.interactivebrokers.com,InteractiveBrokers
+
+USER-AGENT,IBKR*,InteractiveBrokers
+USER-AGENT,IMPACT*,InteractiveBrokers
+USER-AGENT,GlobalTrader*,InteractiveBrokers
+
+
 
