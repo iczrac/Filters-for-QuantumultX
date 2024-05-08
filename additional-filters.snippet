@@ -2,6 +2,21 @@
 # additional-filters.snippet
 # 可用规则：节点选择, 自动选择, 🇭🇰香港, 🐳台湾, 🇯🇵日本, 🇰🇷韩国, 🇸🇬新加坡, 🇺🇸美国, 👨‍🎤其他, PROXY, DIRECT
 # 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.snippet
+# HOST等同于DOMAIN ：匹配请求的域, 例如：HOST，instagram.com，Proxy 匹配instagram.com的域名，走代理。
+# HOST-SUFFIX 等同于 DOMAIN-SUFFIX ：匹配请求的域名后缀, 例如：HOST-SUFFIX，image.instagram.com，Proxy 匹配域名后缀为：image.instagram.com的域名，走代理。
+# HOST-KEYWORD 等同于 DOMAIN-KEYWORD：匹配域名中包含的关键字。例如：DOMAIN-KEYWORD， instagram， Proxy 匹配包含 instagram 关键词的域名，走代理。
+# IP-CIDR：匹配处在给定域内的 IP, 例如 IP-CIDR， 17.0.0.0/8， Proxy 匹配IP域17.0.0.0/8 走代理。
+# GEOIP： 匹配给定地理区域内的 IP, 例如 GEOIP， CN， DIRECT 匹配中国IP走直连。
+# USER-AGENT：特殊字符串头匹配（可以理解为应用名）, 例如：USER-AGENT，QQ*，DIRETC 匹配应用名包含QQ关键字的应用，走直连。 
+
+
+
+
+
+
+
+
+
 
  
 # 直连规则
