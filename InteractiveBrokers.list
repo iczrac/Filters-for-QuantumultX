@@ -16,7 +16,7 @@ HOST-SUFFIX,interactivebrokers.co.jp,InteractiveBrokers
 ## IBKR WEBSITE – HONG KONG2
 HOST-SUFFIX,interactivebrokers.com.hk,InteractiveBrokers
 ## IBKR WEBSITE – CHINA2
-HOST-SUFFIX,ibkr.com.cn,InteractiveBrokers
+HOST-SUFFIX,ibkr.com.cn,direct
 ## IBKR WEBSITE - AUSTRALIA
 HOST-SUFFIX,interactivebrokers.com.au,InteractiveBrokers
 ## CLIENT PORTAL – EAST
@@ -38,8 +38,8 @@ HOST-SUFFIX,zdc1_hb1.ibllc.com,InteractiveBrokers
 HOST-SUFFIX,hdc1.ibllc.com,InteractiveBrokers
 HOST-SUFFIX,hdc1_hb1.ibllc.com,InteractiveBrokers
 ## TWS ASIA - CHINA3
-HOST-SUFFIX,mcgw1.ibllc.com.cn,InteractiveBrokers
-HOST-SUFFIX,mcgw1_hb1.ibllc.com.cn,InteractiveBrokers
+HOST-SUFFIX,mcgw1.ibllc.com.cn,direct
+HOST-SUFFIX,mcgw1_hb1.ibllc.com.cn,direct
 ## TWS AUTO-UPDATE	PRIMARY	
 HOST-SUFFIX,download.interactivebrokers.co,InteractiveBrokers
 HOST-SUFFIX,download2.interactivebrokers.com,InteractiveBrokers
