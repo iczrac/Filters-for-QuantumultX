@@ -1,41 +1,22 @@
-hostname = -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,
-          yt.be,ads.google.com,googleads.g.doubleclick.net,googlesyndication.com,
-          doubleclick.net,ad.doubleclick.net,static.doubleclick.net, 
-          www.googletagmanager.com,tagmanager.google.com
+hostname = -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,*.youtube.com
 
-googleVideoDomain = https?:\/\/[\w-]+\.googlevideo\.com
-youtubeApiDomain = https?:\/\/youtubei\.googleapis\.com
-youtubeDomain = https?:\/\/(www|s)\.youtube\.com
+# ======= 视频广告请求 ======= #
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
 
-# 视频广告请求
-$googleVideoDomain\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
-$googleVideoDomain\/(?!dclk_video_ads).+?&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+# ======= 视频PIP|后台播放|瀑布流|搜索页|播放页|短视频|贴片广告  ======= #
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence) url script-request-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/Other/Youtube.min.js
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting) url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/Other/Youtube.min.js
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
 
-# 视频页面广告
-$youtubeApiDomain\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence) url script-request-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/Other/Youtube.min.js
-$youtubeApiDomain\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting) url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/Other/Youtube.min.js
-$youtubeApiDomain\/youtubei\/v\d\/player\/ad_break url reject
+# ======= 通用广告请求 ======= #
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject-200
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
 
-# 通用广告请求
-$youtubeDomain\/api\/stats\/ads url reject-200
-$youtubeDomain\/(pagead|ptracking) url reject-200
-$youtubeDomain\/api\/stats\/qoe\?adcontext url reject-200
-
-# 美国YouTube广告
-^https?:\/\/(www\.youtube\.com|s\.youtube\.com)\/watch\?v=[a-zA-Z0-9_-]*\&ad_format=[^&]* url reject-200
-^https?:\/\/(www\.youtube\.com|s\.youtube\.com)\/embed\/[a-zA-Z0-9_-]*\&ad_format=[^&]* url reject-200
-$youtubeApiDomain\/youtubei\/v1\/player\/ad_break url reject
-$youtubeApiDomain\/youtubei\/v1\/player\/next\/ad_break url reject
-$youtubeApiDomain\/youtubei\/v1\/player\/guide\/ad_break url reject
-$youtubeApiDomain\/youtubei\/v1\/browse\/feed\/ad_break url reject
-$youtubeDomain\/ads url reject-200
-$youtubeDomain\/pagead url reject-200
-$youtubeDomain\/ptracking url reject-200
-
-# 使用JavaScript脚本隐藏所有ad-类别的元素
-(function () {
-  var ads = document.querySelectorAll(".ad-");
-  for (var i = 0; i < ads.length; i++) {
-    ads[i].style.display = "none";
-  }
-})();
+# ======= 新增规则以涵盖更多广告请求 ======= #
+^https?:\/\/[\w-]+\.googlevideo\.com\/videoplayback\?[\w&=-]+&oad url reject-200
+^https?:\/\/[\w-]+\.youtube\.com\/ptracking\?[\w&=-]+&oad url reject-200
+^https?:\/\/[\w-]+\.youtube\.com\/get_midroll_ info\? url reject-200
+^https?:\/\/[\w-]+\.youtube\.com\/api\/stats\/ads url reject-200
+^https?:\/\/[\w-]+\.youtube\.com\/api\/stats\/qoe\?adformat url reject-200
